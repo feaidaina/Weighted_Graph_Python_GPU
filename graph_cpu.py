@@ -11,7 +11,7 @@ ap.add_argument("-t", "--texture", type = str, required=True,
     help="path to the texture, for the moment just for gray scale, npz format")
 ap.add_argument("-k", "--k", type = int,  required=True,
     help="number of nns")
-args = vars(ap.parse_args())
+args = vars(ap.parse_args(args))
 
 
 # get the position vector               
